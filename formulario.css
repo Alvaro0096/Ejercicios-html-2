@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+/* GLOBAL CLASS */
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.flex{
+    margin: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.title__rigth{
+    text-align: right;
+}
+
+.input__border{
+    border: none;
+    border-bottom: 2px solid #000;
+}
+
+.big__input{
+    width: 25rem;
+}
+
+.med__input{
+    width: 18rem;
+}
+
+.smallMed__input{
+    width: 13rem;
+}
+
+.small__input{
+    width: 7rem;
+}
+
+.label__form{
+    font-size: .9rem;
+}
+
+/* NAME FORM */
+
+.name__container{
+    border-top: 1px solid #ccc;
+}
+
+.name__form{
+    margin-bottom: 1rem;
+}
+
+.name__form:hover{
+    background-color: rgb(247, 247, 108);
+}
+
+.name__form input:focus{
+    outline: none;
+    border: 2px solid red;
+}
+
+.label__form{
+    margin-bottom: .5rem;
+}
+
+/* ADDRESS FORM */
+
+.address__form{
+    border-top: 1px solid #ccc;
+}
+
+.address__group{
+    display: grid;
+    grid-template-columns: 15rem 15rem;
+}
+
+.address__box{
+    display: flex;
+    flex-direction: column;
+}
+
+/* MAIL FORM */
+
+.mail__form{
+    border-top: 1px solid #ccc;
+}
+
+/* PHONE FORM */
+
+.phone__form{
+    border-top: 1px solid #ccc;
+}
+
+.phone__group{
+    display: grid;
+    grid-template-columns: 25rem 25rem;
+}
+
+.phone__box{
+    display: flex;
+    flex-direction: column;
+}
+
+/* SUBMIT CONTAINER */
+
+.btn__container{
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid #ccc;
+}
+
+.btn__container input{
+    margin: 2rem 0;
+    font-size: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}

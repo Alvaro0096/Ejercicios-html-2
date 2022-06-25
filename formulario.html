@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Maquetación formulario</title>
+</head>
+<body>
+    <a href="index.html" target="_blank" rel="noopener noreferrer"><h1 class="title">Formulario de registro</h1></a>
+
+    <form>
+        <div class="form__container">
+            <div class="name__form grid">
+                <h3 class="title__rigth">Nombre y apellido</h3>
+                <div class="content__form flex">
+                    <input class="input__border med__input" type="text" pattern="^[a-zA-Z]+$"  maxlength="20" required>
+                    <label class="label__form">Nombre</label>
+
+                    <input class="input__border big__input" type="text" pattern="^[a-zA-Z]+$" maxlength="20" required>
+                    <label class="label__form">Primer apellido</label>
+
+                    <input class="input__border big__input" type="text" pattern="^[a-zA-Z]+$" maxlength="20" required>
+                    <label class="label__form">Segundo apellido</label>
+                </div>
+            </div>
+
+            <div class="address__form grid">
+                <h3 class="title__rigth">Dirección</h3>
+                <div class="addres__content flex">
+                    <input class="input__border big__input" type="text" maxlength="30" required>
+                    <label class="label__form">Calle, número, piso, puerta</label>
+        
+                    <div class="address__group">    
+                        <div class="address__box">
+                            <input class="input__border small__input" type="text" maxlength="10" required>
+                            <label class="label__form">Código postal</label>
+                        </div>
+        
+                        <div class="address__box">
+                            <input class="input__border med__input" type="text" pattern="^[a-zA-Z]+$" maxlength="20" required>
+                            <label class="label__form">Municipio</label>
+                        </div>
+                    </div>
+        
+                    <div class="address__group">
+                        <div class="address__box">
+                            <select class="input__border small__input">
+                                <option></option>
+                                <option>Santa Fe</option>
+                                <option>Buenos Aires</option>
+                                <option>Cordoba</option>
+                            </select>
+                            <label class="label__form">Provincia</label>
+                        </div>
+        
+                        <div class="address__box">
+                            <select class="input__border smallMed__input">
+                                <option></option>
+                                <option>Argentina</option>
+                                <option>Brasil</option>
+                                <option>Uruguay</option>
+                            </select>
+                            <label class="label__form">País</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mail__form grid">
+                <h3 class="title__rigth">Email</h3>
+                <div class="flex">
+                    <input class="input__border med__input" type="email" maxlength="20" required>
+                </div>
+            </div>
+
+            <div class="phone__form grid">
+                <h3 class="title__rigth">Teléfono</h3>
+                <div class="flex">
+                    <div class="phone__group">
+                        <div class="phone__box">
+                            <input 
+                            class="input__border smallMed__input" 
+                            type="text" 
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" 
+                            maxlength="20" 
+                            required
+                            >
+                            <label class="label__form">Fijo</label>
+                        </div>
+        
+                        <div class="phone__box">
+                            <input 
+                            class="input__border smallMed__input" 
+                            type="text" 
+                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');" 
+                            maxlength="20" 
+                            required
+                            >
+                            <label class="label__form">Móvil</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn__container">
+                <input type="submit" value="Registrarse">    
+            </div>
+
+
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,117 @@
+/* SOLO FLOAT  */
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.title{
+    text-align: center;
+}
+
+.container__box{
+    max-width: 100%;
+}
+
+.aside__box{
+    width: 25%;
+    float: left;
+}
+
+.main__box{
+    width: 75%;
+    float: right;
+}
+
+.list__box{    
+    padding: 0;
+    list-style: none;
+}
+
+.list__box li{
+    width: calc(100% / 3);
+    float: left;
+}
+
+
+@media (max-width: 500px){
+
+.aside__box,
+.main__box{
+    width: 100%;
+    float: none;
+}
+
+.list__box li{
+    width: 100%;
+    float: none;
+    padding-bottom: 1rem;
+}
+
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* DISPLAY FLEX Y GRID */
+
+/* *{
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.title{
+    text-align: center;
+}
+
+.container__box{
+    width: 100%;
+    display: flex;
+}
+
+.aside__box{
+    width: 25%;
+}
+
+.main__box{
+    width: 75%;
+}
+
+.list__box{    
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+@media (max-width: 500px){
+
+.container__box{
+    flex-direction: column;
+}
+
+.aside__box,
+.main__box{
+    width: 100%;
+}
+
+.list__box{    
+    gap: 1rem;
+}
+
+} */
